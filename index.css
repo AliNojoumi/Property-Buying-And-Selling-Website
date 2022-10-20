@@ -271,6 +271,39 @@ span.plus {
 
 /* ----------SECTION-1***---------- */
 
+/* ----------***SECTION-2---------- */
+
+.sec-2 {
+  width: 100%;
+  height: auto;
+  background: var(--white-color);
+  padding: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-2-container {
+  width: 83.3%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 3.5rem;
+  column-gap: 2rem;
+}
+
+.company-logo {
+  width: 11.5rem;
+  height: auto;
+}
+
+.third-logo {
+  width: 13.5rem;
+}
+
+/* ----------SECTION-2***---------- */
+
 /* ----------***MEDIA-QUERY---------- */
 
 @media screen and (min-width: 1024px) {
