@@ -116,6 +116,7 @@ nav {
   width: 95%;
   height: 3rem;
   position: fixed;
+  z-index: +999;
   top: auto;
   bottom: 1rem;
   padding: 0.5rem 1rem;
@@ -160,6 +161,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0 0 2rem 2rem;
 }
 
 .sec-1-container {
@@ -190,7 +192,9 @@ span.most {
 }
 
 span.dot,
-span.plus {
+span.plus,
+span.dollor-sign,
+span.popular {
   color: var(--secondary-color);
 }
 
@@ -304,6 +308,123 @@ span.plus {
 
 /* ----------SECTION-2***---------- */
 
+/* ----------***SECTION-3---------- */
+
+.sec-3 {
+  background: var(--white-color);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-3-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h-5-slide {
+  font-size: var(--h5-font);
+  color: var(--dark-color);
+  font-weight: var(--bold-font);
+  text-align: center;
+}
+
+.card-container {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+}
+
+.card-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-card {
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: -2px -2px 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-navbtn {
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  color: var(--primary-color);
+  background: var(--landing-page-gray);
+  border-radius: 50rem;
+  transition: all 0.2s ease;
+}
+
+.swiper-navbtn:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+  transition: all 0.2s ease;
+}
+
+.swiper-navbtn::before,
+.swiper-navbtn::after {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.slide-description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.h-5-price {
+  font-size: var(--h5-font);
+  font-weight: var(--bold-font);
+  text-decoration: inherit;
+  color: var(--dark-color);
+  margin-top: 1rem;
+}
+
+.p-price {
+  font-size: var(--body-font);
+  color: var(--dark-color);
+  font-weight: var(--regular-font);
+  margin-top: 0.5rem;
+}
+
+.p-price-2 {
+  font-size: var(--body-font);
+  color: var(--main-gray);
+  font-weight: var(--regular-font);
+}
+
+/* ----------SECTION-3***---------- */
+
 /* ----------***MEDIA-QUERY---------- */
 
 @media screen and (min-width: 1024px) {
@@ -323,6 +444,13 @@ span.plus {
 
   .sec-1-container {
     width: 83.3%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }
 
